@@ -121,3 +121,166 @@
 //  };
 // setInterval(youGotThis,100);
 
+// class ClassNmae{
+//     constructor(prop1,prop2)
+//     {
+//         this.prop1=prop1;
+//         this.prop2=prop2;
+//     }
+// }
+// let obj=new ClassNmae("arg1","arg2");
+// console.log(obj.prop1);
+// console.log(obj.prop2);
+
+// class Dog{
+//     constructor(dogName,weight,color,breed){
+//         this.dogName=dogName;
+//         this.weight=weight;
+//         this.color=color;
+//         this.breed=breed;
+//     }
+// }
+// let dog=new Dog("JavaScript",2.4,"brown","chihuaha");
+// console.log(dog.dogName,"is a",dog.breed,"and weighs",dog.weight,"kg");
+
+// class Person{
+//     constructor(firstName,lastName){
+//         this.firstName=firstName;
+//         this.lastName=lastName;
+
+//     }
+// }
+// let p=new Person("Maaike");
+// console.log("hi",p.firstName,p.lastName);
+
+// class Person{
+//     constructor(firstName,lastName="doe"){
+//         this.firstName=firstName;
+//         this.lastName=lastName;
+
+//     }
+// }
+// let p=new Person("Maaike");
+// console.log("hi",p.firstName,p.lastName);
+
+// class Person{
+//     constructor(firstName,lastName){
+//         this.firstName=firstName;
+//         this.lastName=lastName;
+
+//     }
+//     greet(){
+//         console.log("Hi there! I'm",this.firstName);
+//     }
+// }
+// let p=new Person("Maaike","van Putten");
+// p.greet();
+
+// class Person{
+//     constructor(firstName,lastName){
+//         this.firstName=firstName;
+//         this.lastName=lastName;
+
+//     }
+//     greet(){
+//         console.log("Hi there! I'm",this.firstName);
+//     }
+//     compliment(name,object){
+//         return "That's a wonderful " +object+", "+name;
+//     }
+// }
+// let p=new Person("Maaike","van Putten");
+// p.greet();
+// let compliment=p.compliment("Harry","Hat");
+// console.log(compliment);
+
+// class Person{
+//     #firstName;
+//     #lastName;
+//     constructor(firstName,lastName){
+//         this.#firstName=firstName;
+//         this.#lastName=lastName;
+
+//     }
+//     greet(){
+//         console.log("Hi there! I'm",this.firstName);
+//     }
+//     compliment(name,object){
+//         return "That's a wonderful " +object+", "+name;
+//     }
+// }
+// let p=new Person("Maaike","van Putten");
+// console.log(p.firstName);
+
+// class Person{
+//     #firstName;
+//     #lastName;
+//     constructor(firstName,lastName){
+//         if(firstName.startsWith("M")){
+//         this.#firstName=firstName;
+//     }
+//     else{
+//         this.#firstName="M" +firstName;
+//     }
+//         this.#lastName=lastName;
+
+//     }
+    
+// }
+// let p=new Person("kay","Moon");
+// console.log(p.firstName,p.lastName);
+
+// class Person{
+//     #firstName;
+//     #lastName;
+//     constructor(firstName,lastName){
+//         this.#firstName=firstName;
+//         this.#lastName=lastName;
+//     }
+//     get firstName(){
+//         return this.#firstName;
+//     }
+//     get firstName(){
+//         this.#firstName=firstName;
+
+//     }
+//     get lastName(){
+//         return this.#lastName;
+//     }
+//     get lastName(){
+//         this.#lastName=lastName;
+//     }
+    
+// }
+// let p=new Person("Maria","Saga");
+// console.log(p.get firstName());
+// //Inheritance is the concept of classes can have child classes 
+
+// class Vehicle{
+//     constructor(color,currentSpeed,maxSpeed)
+//     {
+//         this.color=color;
+//         this.currentSpeed=currentSpeed;
+//         this.maxSpeed=maxSpeed;
+//     }
+//     move(){
+//         console.log("moving at",this.currentSpeed);
+//     }
+//     accelerate(amount){
+//         this.currentSpeed+=amount;
+//     }
+// }
+// class MotorCycle extends Vehicle{
+//     constructor(color,currentSpeed,maxSpeed,fuel)
+//     {
+//         super(color,currentSpeed,maxSpeed);
+//         this.fuel=fuel;
+//     }
+//     doWheelie(){
+
+//     }
+// }
+// let motor=new MotorCycle("Black",0,250,"gasoline");
+// console.log(motor.color);
+// motor.accelerate(50);
+// motor.move();
